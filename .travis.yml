@@ -1,4 +1,6 @@
 language: csharp
 solution: Drivefusion.sln
+addons:
+  artifacts: true
 beforescript:
     - sudo apt-get install wine
