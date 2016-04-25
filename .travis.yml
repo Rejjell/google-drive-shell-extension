@@ -1,5 +1,4 @@
 language: csharp
 solution: Drivefusion.sln
 beforescript:
-    - export WixTargetsPath="/home/travis/build/Rejjell/google-drive-shell-extension/DriveFusion.Installer/"
-    - echo $WixTargetsPath
+    - sudo apt-get install wine
