@@ -5,4 +5,4 @@ addons:
   artifacts: true
 before_script:
     - sudo apt-get install wine
-    - sudo apt-get install wix
+    - nuget install wix
