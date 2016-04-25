@@ -3,6 +3,3 @@ solution: Drivefusion.sln
 
 addons:
   artifacts: true
-before_script:
-    - sudo apt-get install wine
-    - nuget install wix
