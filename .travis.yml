@@ -1,20 +1,19 @@
 language: csharp
 solution: Drivefusion.sln
 
-
 addons:
   artifacts: true
 
 before_script:  
-- gem install travis-artifacts
+    - gem install travis-artifacts
 
-#after_script:
-#  - "travis-artifacts upload --path logs"
-#after_failure: # this will of course run only on failure
-#  - "travis-artifacts upload --path debug/debug.log"
-#after_success: # and this only on success
-#    - echo $ARTIFACTS_KEY 
-#    - echo $ARTIFACTS_SECRET 
-#    - echo $ARTIFACTS_PATHS 
-#    - echo $ARTIFACTS_BUCKET
-#    - "travis-artifacts upload --path build/build.tar.gz"
+after_script:
+    - echo $ARTIFACTS_KEY 
+    - echo $ARTIFACTS_SECRET 
+    - echo $ARTIFACTS_PATHS 
+    - echo $ARTIFACTS_BUCKET
+    - "travis-artifacts upload --path logs"
+after_failure: # this will of course run only on failure
+    - "travis-artifacts upload --path debug/debug.log"
+after_success: # and this only on success
+        - "travis-artifacts upload --path build/build.tar.gz"
