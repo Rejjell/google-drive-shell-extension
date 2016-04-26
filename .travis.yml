@@ -3,15 +3,20 @@ solution: Drivefusion.sln
 addons:
   artifacts: true
 before_script:  
-    - rvm install 2.0.0
-    - gem install travis-artifacts
+    #- rvm install 2.0.0
+    #- gem install travis-artifacts
 after_script:
     - echo $ARTIFACTS_KEY 
     - echo $ARTIFACTS_SECRET 
     - echo $ARTIFACTS_PATHS 
     - echo $ARTIFACTS_BUCKET
-    - "travis-artifacts upload --path logs"
+    #- "travis-artifacts upload --path logs"
 after_failure: # this will of course run only on failure
-    - "travis-artifacts upload --path debug/debug.log"
+    #- "travis-artifacts upload --path debug/debug.log"
 after_success: # and this only on success
-    - "travis-artifacts upload --path build/build.tar.gz"
+    #- "travis-artifacts upload --path build/build.tar.gz"
+      - eval "$(ssh-agent -s)" #start the ssh agent
+      - chmod 600 .travis/deploy_key.pem # this key should have push access
+      - ssh-add .travis/deploy_key.pem
+      - git remote add deploy DEPLOY_REPO_URI_GOES_HERE
+      - git push deploy
