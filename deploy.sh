@@ -10,11 +10,11 @@ fi
 
 rev=$(git rev-parse --short HEAD)
 
-cd stage/_book
+#cd stage/_book
 
 git init
-git config user.name "Steve Klabnik"
-git config user.email "steve@steveklabnik.com"
+git config user.name "Mezheninov Maxim"
+git config user.email "lejjer@gmail.com"
 
 git remote add upstream "https://$GH_TOKEN@github.com/Rejjell/google-drive-shell-extension.git"
 git fetch upstream
