@@ -11,6 +11,7 @@ solution: Drivefusion.sln
 #  > /dev/null 2>&1
 after_success:
   - git status
+  - ls
   - bash deploy_short.sh
 env:
   global:
