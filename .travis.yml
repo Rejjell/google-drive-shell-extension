@@ -3,7 +3,6 @@ solution: Drivefusion.sln
 
 addons:
   artifacts: true
-
 before_script:  
     - rvm install 2.0.0
     - gem install travis-artifacts
