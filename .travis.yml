@@ -5,8 +5,8 @@ solution: Drivefusion.sln
 addons:
   artifacts: true
 
-#before_script:  
-#- "gem install travis-artifacts"
+before_script:  
+- gem install travis-artifacts
 
 #after_script:
 #  - "travis-artifacts upload --path logs"
