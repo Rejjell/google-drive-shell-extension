@@ -11,8 +11,8 @@ after_script:
 after_failure: # this will of course run only on failure
   - "travis-artifacts upload --path debug/debug.log"
 after_success: # and this only on success
-  - echo $ARTIFACTS_S3_BUCKET
-  - echo $ARTIFACTS_AWS_REGION
-  - echo $ARTIFACTS_AWS_ACCESS_KEY_ID
-  - echo $ARTIFACTS_AWS_SECRET_ACCESS_KEY
-  - "travis-artifacts upload --path build/build.tar.gz"
+    - echo $ARTIFACTS_KEY 
+    - echo $ARTIFACTS_SECRET 
+    - echo $ARTIFACTS_PATHS 
+    - echo $ARTIFACTS_BUCKET
+    - "travis-artifacts upload --path build/build.tar.gz"
