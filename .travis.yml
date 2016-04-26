@@ -1,6 +1,5 @@
 language: csharp
 solution: Drivefusion.sln
-
 addons:
   artifacts: true
 before_script:  
