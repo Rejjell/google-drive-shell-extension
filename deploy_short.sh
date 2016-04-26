@@ -1,5 +1,5 @@
 export REPO="$(pwd | sed s,^/home/travis/builds/,,g)"
-ssh -o StrictHostKeyChecking=no
+#ssh -o StrictHostKeyChecking=no
 if [ "$TRAVIS_BRANCH" == "travis" ]; then
     git branch -D gh-pages
     git checkout -B gh-pages
