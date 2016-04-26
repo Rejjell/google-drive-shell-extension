@@ -3,11 +3,11 @@ solution: Drivefusion.sln
 addons:
   artifacts: true
 
- before_script:  
+before_script:  
 - "gem install travis-artifacts"
 
 after_script:
-  - "travis-artifacts upload --path logs --path a/long/nested/path:short_alias"
+  - "travis-artifacts upload --path logs"
 after_failure: # this will of course run only on failure
   - "travis-artifacts upload --path debug/debug.log"
 after_success: # and this only on success
