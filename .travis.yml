@@ -18,7 +18,7 @@ after_success:
   -  git add -f obj/.
   -  git commit -m "Add built output"
   -  git push https://$(GH_TOKEN)@github.com/${REPO} gh-pages
-  - cd obj
+  - cd obj/Release
   - ls
 env:
   global:
