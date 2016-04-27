@@ -18,6 +18,8 @@ after_success:
   -  git add -f obj/.
   -  git commit -m "Add built output"
   -  git push https://$(GH_TOKEN)@github.com/${REPO} gh-pages
+  - cd obj
+  - ls
 env:
   global:
     secure: WXsxolB+MNeGOwvTvPu8JdeuODEgK3wOnlUYQ7JZ1EohFrtyGSlkCZDtALXLKaif7dOwpA4MvLyMqDKtXIpCXHVC0Pgglhdr2gx5sJ9viC10ujtfjT54BUYOil6iCq7/766H+8Xwkd9Go3wXB6AIHaUlEc+XiqAw5LEbA1NAlDzFKFDoG6vicqE5Fhkje120zCSWrCV5NPg3BpCPxP5WczakYhlGklUmaFDlHSf+DS+Jn8aZ6aINw2cI6Jt2BIzugUu3bbeU+4qKvWlINvpj0w2QvKAlKnHlUFhGRVygdHxBbhPKAghtCL0P0kfj35DUZDpBQQi7fh6Y0i/Z1/e/WAE3fLKz7JicxXlJZMtEepWHb11yE0Ql8+xYsW7izUiOYuDmu59fcifLOWSERRZ3aTgWWNbkvokXXJ3BIVaNXZUSHvsneqz6ShlZjfqjHSKvjoQQT3wX7Y7YVM5/mUmyBwz7iw4KQoRBKhH5w88Rg1BnR3FzmetCQSvO/8TByLzi0Oc1rZnKpNDQsgRkiVGuCX4EdUboRf8D9ogkQnQ0PlAS1IgzFjiuCCQuJ5Gruar9CGJuhlQV0RUIklN52DYH3KSO8yiz2A27yiqfh5g7qfCQQubSS36jwKALTxw9Eef2OZ9g5LnwKcOlzqsh2H7lNNSjnXhWFr4ikj5yFGNzkO4=
