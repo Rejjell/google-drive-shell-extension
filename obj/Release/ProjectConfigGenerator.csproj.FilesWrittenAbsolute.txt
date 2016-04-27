@@ -1,0 +1,6 @@
+/home/travis/build/Rejjell/google-drive-shell-extension/obj/Release/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/travis/build/Rejjell/google-drive-shell-extension/obj/Release/bin/ProjectConfigGenerator.exe.config
+/home/travis/build/Rejjell/google-drive-shell-extension/obj/Release/bin/ProjectConfigGenerator.exe.mdb
+/home/travis/build/Rejjell/google-drive-shell-extension/obj/Release/bin/ProjectConfigGenerator.exe
+/home/travis/build/Rejjell/google-drive-shell-extension/obj/Release/ProjectConfigGenerator.exe
+/home/travis/build/Rejjell/google-drive-shell-extension/obj/Release/ProjectConfigGenerator.exe.mdb
