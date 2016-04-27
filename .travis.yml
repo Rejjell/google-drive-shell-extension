@@ -16,6 +16,7 @@ after_success:
   - export REPO="$(pwd | sed s,^/home/travis/builds/,,g)"
   - git branch -D gh-pages
   - git checkout -B gh-pages
+  - git pull
   - cd obj/Release
   - git add -f .
   - cd bin
